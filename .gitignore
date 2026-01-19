@@ -1,0 +1,15 @@
+*.cut
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.vrb
+*.run.xml
+*.synctex(busy)
+*.synctex.gz
+*.fls
+*.fdb_latexmk
