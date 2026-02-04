@@ -2,23 +2,22 @@
     \entry*[2025 -- Present]%
     \textbf{RAG-based Information Retrieval for E-commerce} (Rang Dong).
     \begin{itemize}
-        \item Engineered a Retrieval-Augmented Generation (RAG) pipeline utilizing \textbf{Qdrant} for dense vector retrieval and \textbf{LLM} re-ranking.
-        \item Optimized semantic search embeddings for Vietnamese, improving \textbf{Recall@10 by 18\%} compared to baseline BM25 keyword search.
+        \item Designed a \textbf{hybrid retrieval system} (dense + sparse + RRF reranking) on \textbf{Qdrant}.
+        \item Built data ingestion pipelines and LLM response postprocessing to match business intents; deployed on \textbf{Render} with \textbf{Opik} monitoring and \textbf{MongoDB} logging.
     \end{itemize}
     %
     \entry*[December, 2025]%
     \textbf{Domain-Specific Conversational AI} (Gigabyte Hackathon).
     \begin{itemize}
-        \item Designed a low-latency dialogue system for hardware support, implementing strict prompt grounding to minimize hallucination.
-        \item Benchmarked context retention strategies, achieving a stable \textbf{response latency under 800ms} for complex multi-turn queries.
-        \item \textbf{Result:} 1st Place for architectural robustness and inference efficiency.
+        \item Architected a \textbf{hybrid agentic system} (LangGraph + Retion.ai) with specialized REST tools (ROI calculation, review search) to handle complex B2B/B2C scenarios.
+        \item \textbf{Result:} Awarded \textbf{1st Place} for the comprehensive scenario design and robust system performance.
     \end{itemize}
     %
     \entry*[November, 2025]%
     \href{https://github.com/tlong-ds/hanoi-weather-forecast}{\textbf{Time-Series Forecasting for Meteorological Data}}.
     \begin{itemize}
-        \item Developed an ensemble regression framework (CatBoost + XGBoost) to forecast hyper-local weather patterns.
-        \item Conducted ablation studies on feature sets, reducing \textbf{RMSE by 15\%} and achieving an \textbf{F1-score of 0.89} on extreme weather event classification.
+        \item Developed a \textbf{29-model framework} (CatBoost/LightGBM/XGBoost) with 60+ engineered features, optimized via Optuna (2,400+ trials).
+        \item Achieved \textbf{RMSE 1.52°C / R² 0.902} (daily) and \textbf{RMSE 1.61°C / R² 0.907} (hourly), deploying the pipeline via FastAPI and ClearML.
     \end{itemize}
     % 
 
