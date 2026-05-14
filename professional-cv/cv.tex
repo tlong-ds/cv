@@ -1,0 +1,87 @@
+\documentclass[10pt, letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+% Font configuration (Serif)
+\usepackage{palatino}
+
+% Section formatting
+\titleformat{\section}{\large\bfseries\uppercase}{}{0pt}{}[\titlerule]
+\titlespacing*{\section}{0pt}{12pt}{8pt}
+
+% Itemize formatting
+\setlist[itemize]{leftmargin=0.2in, nosep, topsep=2pt}
+
+% Custom commands
+\newcommand{\entryheader}[4]{
+    \noindent\textbf{#1} \hfill #2 \\
+    \textit{#3} \hfill \textit{#4} \par
+}
+
+\begin{document}
+\pagestyle{empty}
+
+% --- HEADER ---
+\begin{center}
+    {\LARGE \textbf{THANH LONG LY}} \\
+    \vspace{4pt}
+    Hanoi, Vietnam $\bullet$ +84 868 421 575 $\bullet$ \href{mailto:lytlong.pers@gmail.com}{lytlong.pers@gmail.com} \\
+    \href{https://github.com/tlong-ds}{github.com/tlong-ds} $\bullet$ \href{https://www.linkedin.com/in/thành-long-lý-565b6a341/}{linkedin.com/in/thành-long-lý-565b6a341/}
+\end{center}
+
+% --- EDUCATION ---
+\section{Education}
+\entryheader{National Economics University (NEU)}{Hanoi, Vietnam}{Bachelor of Data Science in Economics and Business (CGPA: 3.55/4.0)}{Aug 2023 -- Aug 2027}
+
+% --- EXPERIENCE ---
+\section{Experience}
+\entryheader{Alpha Data Academy}{Hanoi, Vietnam}{Agentic AI Engineer}{Jun 2025 -- Present}
+\begin{itemize}
+    \item Achieved a \textbf{97.95\% performance score} across 1,051 B2B2C sales scenarios by architecting a \textbf{LangGraph}-based multi-agent system to automate a legacy manufacturer's sales process, utilizing \textbf{Supabase PostgreSQL} for state persistence.
+    \item Supported high API load of \textbf{200+ concurrent requests} with \textbf{sub-100ms latency} by engineering asynchronous request logic via \textbf{FastAPI}, orchestrating containerized agent services with \textbf{Docker}, and implementing observability using \textbf{Grafana}, \textbf{Prometheus}, and \textbf{Opik}.
+\end{itemize}
+
+\vspace{6pt}
+\entryheader{Predictive Models and ML Research Application Lab (NEU)}{Hanoi, Vietnam}{AI Research Assistant}{Jan 2025 -- Present}
+\begin{itemize}
+    \item Synthesized state-of-the-art literature on Agentic AI frameworks (e.g., OpenClaw, Coding Agents) by analyzing \textbf{50+} academic papers to guide architectural decisions.
+    \item Co-authored a comprehensive research report on Agentic AI adoption, translating technical evaluation metrics into actionable business impact for non-technical stakeholders.
+\end{itemize}
+
+% --- FEATURED PROJECTS ---
+\section{Featured Projects}
+\entryheader{Agentic Financial Advisor Architecture (Swin Hackathon 2026)}{}{Lead Developer}{Feb 2026 -- Mar 2026}
+\begin{itemize}
+    \item Engineered a cloud-native, multi-agent advisory product utilizing \textbf{LangGraph} and \textbf{LangChain}, emphasizing complex \textbf{planning loops} and strict data governance.
+    \item Designed an end-to-end containerized MVP deployment strategy using \textbf{Docker} and \textbf{FastAPI}, optimizing for rapid time-to-market and low operational overhead.
+\end{itemize}
+
+\vspace{6pt}
+\entryheader{Real-Time Multimodal AI for IELTS Assessment}{}{Independent Full-Stack Developer}{Jan 2026 -- Present}
+\begin{itemize}
+    \item Architected an \textbf{agentic assessment engine}, deploying real-time audio pipelines with the \textbf{speech-to-speech Gemini Live API} via WebSockets.
+    \item Programmed the agent to autonomously manage state progression and dynamic conversational memory, ensuring strict contextual consistency across multi-turn language evaluations.
+\end{itemize}
+
+\vspace{6pt}
+\entryheader{Domain-Specific Conversational AI (Master AI Hackathon 2025)}{}{Project Lead}{Oct 2025 -- Dec 2025}
+\begin{itemize}
+    \item Architected a \textbf{multi-step, hybrid agentic workflow} with custom tools for ROI calculation, integrating \textbf{memory modules} to track context across multi-turn sessions.
+    \item Led a team to win \textbf{1st Place} out of 20+ teams, delivering a high-precision QA solution scalable to enterprise demands.
+\end{itemize}
+
+% --- SKILLS & INTERESTS ---
+\section{Skills \& Interests}
+\begin{itemize}
+    \item \textbf{Technical Stack:} Python, SQL, C++, React, Node.js, Docker, AWS, Git, FastAPI, Supabase.
+    \item \textbf{AI/ML Stack:} PyTorch, TensorFlow, HuggingFace, LangChain, LangGraph, Scikit-learn, Qdrant (Vector DB).
+    \item \textbf{Core Competencies:} Product Strategy, End-to-End Execution, Analytical Problem Solving, Cross-functional Collaboration.
+    \item \textbf{Interests:} Agentic AI Research, Financial Modeling, Competitive Hackathons.
+\end{itemize}
+
+\end{document}
